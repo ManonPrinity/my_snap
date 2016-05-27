@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+       <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/inscription.js"></script>
+        <script type="text/javascript" src="server.js"></script>
+        <title>My_SnapChat</title>
+    </head>
+    <body ng-app="my_app">
+        <div id="main_div">
+            <div id="main_header">
+                <input id="menu_btn" type="button" value="">
+                <p>My_SnapChat</p>
+            </div>
+            <h2>Inscription</h2>
+            <div ng-controller="my_ctrl">
+                <form id="formulaire" name="myForm" ng-submit="send_post()" novalidate="">
+                    <label>E-mail : </label>
+                    <input name="nom" type="email" ng-maxlength="30" ng-model="user_mail">
+                    <label>Password : </label>
+                    <input name="mail" type="password" required ng-model="user_password">
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <div id="image"></div>
+            <p id="signin">Or <a href="templates/connexion.html">SignIn</a></p>
+        </div>
+    </body>
+</html>

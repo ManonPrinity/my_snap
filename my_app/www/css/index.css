@@ -1,0 +1,22 @@
+html { height: 100%; }
+body { height:100%; margin:0px; padding:0px; background-color: #f0f0f0; background-attachment:fixed; font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif; font-size:12px; text-transform:uppercase; }
+
+p { margin: 0px auto; text-align: center; }
+h1 {  margin: 0px auto; text-align: center; }
+
+h2 {  margin: 0px auto; text-align: center; font-size: 12px; margin-top: 20px; margin-bottom: 15px;}
+
+#main_div { display: block; width: 100%; height: 100%; }
+#main_header { position: relative; height: 45px; box-shadow: 0px 1px 1px #777C7D; background-color: #F9F7FC; }
+    #main_header > p { font-size: 16px; padding-top: 10px; }
+    #main_header > input { margin-top: 5px;  cursor: pointer;}
+#menu_btn { display: block; box-sizing: border-box; position: absolute; width: 32px; height: 32px; border: none; background-color: transparent; background-image: url("../img/menu.svg"); background-size: 16px 16px; background-position: 50% 50%; background-repeat: no-repeat; }
+#formulaire { text-align: center; }
+    #formulaire > label, #formulaire > input  { display: block; text-align: center; width: calc(100% - 40px); margin: auto; box-sizing: border-box; }
+    #formulaire > label { height: 30px; line-height: 30px;}
+    #formulaire > input { height: 40px; padding: 0px 10px; border: 1px solid #777C7D; background-color: #f8f1f1;}
+    #formulaire > input[type=submit] {  margin-top: 30px; cursor: pointer; background-color: #e3e3e3;}
+#main_div { background-image: url("../img/photo.svg"); background-position: 50% 90%; background-repeat: no-repeat; background-size: 50% auto; }
+#signin { margin: 0px auto; text-align: center; font-size: 12px; margin-top: 20px; margin-bottom: 15px; }
+
+#main_div_co { display: block; width: 100%; height: 100%; background-image: url("../img/gost.svg"); background-position: 50% 90%; background-repeat: no-repeat; background-size: 50% auto; }
